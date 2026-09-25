@@ -25,6 +25,22 @@
 - **Contact & Feedback Form:** Integrated client-side validation and backend submission storage.
 - **AI-Crafted High-Resolution Imagery:** Product, hero background, and brand photography.
 
+## Screenshots & Visual Reference
+
+Here is a glimpse of the Golden Harvest website and its various sections.
+
+### 1. Hero Section
+![Hero Section](images/screenshots/hero.png)
+
+### 2. Products Section
+![Products Section](images/screenshots/products.png)
+
+### 3. About Our Story
+![About Section](images/screenshots/about.png)
+
+### 4. Contact & Footer
+![Contact and Footer](images/screenshots/contact_footer.png)
+
 ---
 
 ## Tech Stack
