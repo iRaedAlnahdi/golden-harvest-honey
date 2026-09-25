@@ -1,0 +1,37 @@
+{
+  "name": "golden-harvest-honey",
+  "version": "1.0.0",
+  "description": "Golden Harvest Honey - A modern bilingual (EN/AR) e-commerce demo website for selling natural honey.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "init-db": "node db/init.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "honey-store",
+    "bilingual",
+    "arabic",
+    "english",
+    "rtl",
+    "express",
+    "jwt-auth",
+    "demo",
+    "portfolio"
+  ],
+  "author": "iraedalnahdi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iraedalnahdi/golden-harvest-honey.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

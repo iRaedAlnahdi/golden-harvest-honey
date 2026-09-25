@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Golden Harvest Honey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <div class="login-page">
+        <!-- Left Side - Branding -->
+        <div class="login-brand">
+            <div class="brand-content">
+                <a href="/" class="brand-logo">
+                    <span class="brand-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><path d="M12 12l8-4.5"/><path d="M12 12v8"/><path d="M12 12L4 7.5"/></svg>
+                    </span>
+                    <span data-en="Golden Harvest" data-ar="الحصاد الذهبي">Golden Harvest</span>
+                </a>
+                <h1 data-en="Pure Natural Honey" data-ar="عسل طبيعي نقي">Pure Natural Honey</h1>
+                <p data-en="From our hives to your table — experience the golden taste of nature's finest sweetener." data-ar="من خلايانا إلى مائدتك — استمتع بالمذاق الذهبي لأفضل محلّي طبيعي.">From our hives to your table — experience the golden taste of nature's finest sweetener.</p>
+                <div class="brand-features">
+                    <div class="feature">
+                        <span class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                        </span>
+                        <span data-en="500+ Bee Colonies" data-ar="أكثر من ٥٠٠ مستعمرة نحل">500+ Bee Colonies</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                        </span>
+                        <span data-en="100% Organic" data-ar="عضوي ١٠٠٪">100% Organic</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                        </span>
+                        <span data-en="Premium Quality" data-ar="جودة فاخرة">Premium Quality</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Form -->
+        <div class="login-form-side">
+            <div class="form-container">
+                <!-- Language Toggle -->
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </span>
+                    <span id="langLabel">العربية</span>
+                </button>
+
+                <!-- Tab Switcher -->
+                <div class="tab-switcher">
+                    <button class="tab active" id="loginTab" data-en="Sign In" data-ar="تسجيل الدخول">Sign In</button>
+                    <button class="tab" id="registerTab" data-en="Create Account" data-ar="إنشاء حساب">Create Account</button>
+                    <div class="tab-indicator" id="tabIndicator"></div>
+                </div>
+
+                <!-- Login Form -->
+                <form class="auth-form" id="loginForm">
+                    <h2 data-en="Welcome Back!" data-ar="مرحباً بعودتك!">Welcome Back!</h2>
+                    <p class="form-subtitle" data-en="Sign in to your account to continue" data-ar="سجّل دخولك للمتابعة">Sign in to your account to continue</p>
+
+                    <div class="input-group">
+                        <label for="loginEmail" data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </span>
+                            <input type="email" id="loginEmail" required data-en-placeholder="your@email.com" data-ar-placeholder="بريدك@مثال.com" placeholder="your@email.com">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="loginPassword" data-en="Password" data-ar="كلمة المرور">Password</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            </span>
+                            <input type="password" id="loginPassword" required data-en-placeholder="Enter your password" data-ar-placeholder="أدخل كلمة المرور" placeholder="Enter your password">
+                            <button type="button" class="toggle-password" data-target="loginPassword" aria-label="Toggle password visibility">
+                                <svg class="eye-open" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                <svg class="eye-closed" style="display:none;" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="rememberMe">
+                            <span data-en="Remember me" data-ar="تذكرني">Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-link" data-en="Forgot password?" data-ar="نسيت كلمة المرور؟">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-submit" data-en="Sign In" data-ar="تسجيل الدخول">Sign In</button>
+
+                    <div class="form-status" id="loginStatus"></div>
+                </form>
+
+                <!-- Register Form -->
+                <form class="auth-form hidden" id="registerForm">
+                    <h2 data-en="Create Account" data-ar="إنشاء حساب">Create Account</h2>
+                    <p class="form-subtitle" data-en="Join Golden Harvest and enjoy premium honey" data-ar="انضم للحصاد الذهبي واستمتع بعسل فاخر">Join Golden Harvest and enjoy premium honey</p>
+
+                    <div class="input-group">
+                        <label for="regName" data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </span>
+                            <input type="text" id="regName" required data-en-placeholder="Enter your name" data-ar-placeholder="أدخل اسمك" placeholder="Enter your name">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="regEmail" data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </span>
+                            <input type="email" id="regEmail" required data-en-placeholder="your@email.com" data-ar-placeholder="بريدك@مثال.com" placeholder="your@email.com">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="regPassword" data-en="Password" data-ar="كلمة المرور">Password</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            </span>
+                            <input type="password" id="regPassword" required minlength="6" data-en-placeholder="At least 6 characters" data-ar-placeholder="٦ أحرف على الأقل" placeholder="At least 6 characters">
+                            <button type="button" class="toggle-password" data-target="regPassword" aria-label="Toggle password visibility">
+                                <svg class="eye-open" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                <svg class="eye-closed" style="display:none;" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="regConfirm" data-en="Confirm Password" data-ar="تأكيد كلمة المرور">Confirm Password</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            </span>
+                            <input type="password" id="regConfirm" required data-en-placeholder="Confirm your password" data-ar-placeholder="أكّد كلمة المرور" placeholder="Confirm your password">
+                            <button type="button" class="toggle-password" data-target="regConfirm" aria-label="Toggle password visibility">
+                                <svg class="eye-open" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                <svg class="eye-closed" style="display:none;" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit" data-en="Create Account" data-ar="إنشاء حساب">Create Account</button>
+
+                    <div class="form-status" id="registerStatus"></div>
+                </form>
+
+                <!-- Back to Home -->
+                <a href="/" class="back-home" data-en="← Back to Store" data-ar="→ العودة للمتجر">← Back to Store</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
